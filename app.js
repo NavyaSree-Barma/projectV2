@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 const port = 3000;
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://barmanavyasree:cOPSGx2QR3O1K1qi@todo-app.93xehf2.mongodb.todo/");
+mongoose.connect("mongodb+srv://barmanavyasree:cOPSGx2QR3O1K1qi@todo-app.93xehf2.mongodb.net/todo");
 const trySchema = new mongoose.Schema({ name: String });
 const Item = mongoose.model("Task", trySchema);
 const todo = new Item({ name: "java" });
